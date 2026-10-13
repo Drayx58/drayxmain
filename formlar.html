@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formlar:</h1>
+<form name="iletisim" action="#" method="post"> 
+<label>username:</label><input type="text" name="kadi" placeholder="kullanıcı adı gir" autocomplete="on"><br>
+<label>password:</label><input type="password" name="sifre"><br>
+<label>Email:</label><input type="email" name="email" required><br>
+<label>Doğum Tarihi:</label><input type="date" name="dogumtarihi"><br>
+<label>Telefon:</label><input type="tel" name="telefon" pattern="[0-9]+"><br>
+<label>Favori Sayım:</label><input type="number" name="favori" ><br>
+<label>Favori Sayım2:</label><input type="number" name="favori2" min="0" max="10" placeholder="65321" readonly disabled><br>
+<label>Favori Rengin:</label><input type="color" name="renk"><br>
+
+<fieldset>
+    <legend>Hobiler</legend>
+<label><input type="checkbox" name="hobi" value="müzik">Müzik</label> <br>
+<label><input type="checkbox" name="hobi" value="futbol">Futbol</label> <br>
+<label><input type="checkbox" name="hobi" value="voleybol">Voleybol</label> <br>
+</fieldset>
+
+<label>Cinsiyet:</label><br>
+<label><input type="radio" name="cins" value="e">Erkek</label>
+<label><input type="radio" name="cins" value="k">Kadın</label> <br>  
+
+<label>Şehirler:</label>
+<select name="sehir" multiple>
+    <optgroup label="Büyük Şehirler">
+        <option value="ankara">Ankara</option>
+        <option value="izmir">İzmir</option>
+        <option value="ist">İstanbul</option>
+   </optgroup>
+    <option value="Kocaeli">Kocaeli</option>
+</select> <br>
+
+<label>File Upload:</label>
+<input type="file" name="dosya" accept=".jpg, .png"  ><br>
+<progress value="40" max="100"></progress> <br>
+<meter value="70" min="0" max="100"></meter> <br>
+<input type="submit" value="gonder">
+<input type="reset" value="temizle">
+<input type="hidden" name="gizliapikey">
+
+<table>
+<tr>
+    <td><label for="kadi">kullanıcı Adı</label></td>
+    <td><input type="text" name="kaditable" id="kadi"></td>
+</tr>
+<tr>
+    <td><label for="sifre2">şifre:</label></td>
+    <td><input type="text" name="sifre2table" id="sifre2"></td>
+</tr>
+
+</table>
+</form>
+
+</body>
+</html>

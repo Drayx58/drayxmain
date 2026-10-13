@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kayıt Formu</title>
+</head>
+<body>
+
+    <h1>Kurs Kayıt Formu</h1>
+    <p>Aşağıdaki formu doldurarak kursumuza kayıt yaptırabilirsiniz.</p>
+
+    <h2>Katılımcı Bilgileri</h2>
+
+    <!-- Resim yerine basit bir placeholder koydum. İstersen kendi resmini koyabilirsin -->
+    <img src="hacker.jpg" alt="Katılımcı" width="200">
+
+    <h3>Kişisel Bilgiler:</h3>
+
+    <form>
+        Ad Soyad: <input type="text"><br><br>
+        Email: <input type="email"><br><br>
+        Şifre: <input type="password"><br><br>
+        D.Tarihi: <input type="date"><br><br>
+
+        <b>Cinsiyet:</b><br>
+        <input type="radio" name="cinsiyet"> Erkek<br>
+        <input type="radio" name="cinsiyet"> Kadın<br><br>
+
+        <b>Hobileriniz:</b><br>
+        <input type="checkbox"> Spor<br>
+        <input type="checkbox"> Müzik<br>
+        <input type="checkbox"> Kitap Okuma<br><br>
+
+        Katılmak İstediğiniz Kurs:
+        <select>
+            <option>HTML Temelleri</option>
+            <option>Python Giriş</option>
+            <option>CSS Temelleri</option>
+            <option>JavaScript</option>
+        </select><br><br>
+
+        CV veya Ek Dosyalar: <input type="file"><br><br>
+
+        Kendinizi Tanıtın:<br>
+        <textarea rows="4" cols="40" placeholder="Kısaca kendinizden bahsedin..."></textarea><br><br>
+
+        <h2>Kurs Saatleri</h2>
+        <table border="1">
+            <tr>
+                <th>Kurs</th>
+                <th>Gün</th>
+                <th>Saat</th>
+            </tr>
+            <tr>
+                <td>HTML Temelleri</td>
+                <td>Pazartesi</td>
+                <td>14:00</td>
+            </tr>
+            <tr>
+                <td>Python Giriş</td>
+                <td>Çarşamba</td>
+                <td>16:00</td>
+            </tr>
+        </table>
+        <br>
+
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Temizle">
+    </form>
+
+    <br>
+    <p>Daha fazla bilgi için: <a href="#">Web sitemizi ziyaret edin</a></p>
+
+</body>
+</html>
